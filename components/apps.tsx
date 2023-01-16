@@ -77,12 +77,12 @@ const Apps = () => {
                 >
                     {notesArray.map((app) =>
                         <SwiperSlide className='flex items-center justify-center justify-items-center gap-8 px-[5vw]' key={app.name}>
-                            <div className='w-[100%] h-[100%] overflow-hidden rounded-3xl '>
-                                <Image src={app.images.cover?.endsWith("undefined") ? "/images/noImage.jpg" : app.images.cover}
-                                    width={1920}
-                                    height={1080}
-                                    layout="responsive"
-                                />
+                            <div className='w-[100%] h-[100%] overflow-hidden rounded-3xl backgr bg-[url("http://localhost:3000/images/mobileWorldSlider.jpg")] bg-cover bg-center'>
+                                {/* <Image src={app.images.cover?.endsWith("undefined") ? "/images/noImage.jpg" : app.images.cover}
+                                        alt=''
+                                        height={1920}
+                                        width={1280}
+                                    /> */}
                             </div>
 
                             <div className='flex flex-col gap-4'>
